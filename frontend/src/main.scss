@@ -227,7 +227,7 @@ h2{
         }
     }
 
-    .navbar_with_Bg{
+    .navbar_With_Bg{
         background: var(--SecondaryColor);
         padding: .5rem 1rem;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
@@ -266,7 +266,7 @@ h2{
         .plane{
             position: absolute;
             width: 100%;
-            top: -25%;
+            top: 10%;
         }
     }
 }
@@ -277,7 +277,7 @@ h2{
     .sectionContainer{
         width: 100%;
         padding: 1.5rem;
-        border: 2px solid var(-- greyBg);
+        border: 2px solid var(--greyBg);
         border-radius: 16px;
         row-gap: 2rem;
 
@@ -287,8 +287,8 @@ h2{
             padding: .5rem;
             border-radius: 1rem;
             flex-direction: column;
-            margin: auto;
             width: 100%;
+            margin: auto;
 
             .singleBtn{
                 padding: .8rem 1.5rem;
@@ -304,17 +304,17 @@ h2{
                 transition: .4s ease;
                }
             }
+            .active{
+              background: var(--PrimaryColor);
+              color: var(--SecondaryColor);
+              font-weight: 500;
+          }
 
-        }
-
-        .active{
-            background: var(--PrimaryColor);
-            color: var(--SecondaryColor);
-            font-weight: 500;
         }
 
         .searchInputs{
             width: 100%;
+            display: flex;
             justify-content: center;
             flex-direction: column;
             gap: 1.5 rem;
@@ -337,7 +337,6 @@ h2{
                         padding-bottom: .7rem;
                         color: var(--blackColor);
                         font-weight: 700;
-
                     }
                     input {
                         width: 95%;
@@ -348,7 +347,7 @@ h2{
 
                         &::placeholder{
                           font-size: 12px;
-                            opacity: .7;
+                            opacity: .5;
 
                           
                         }
@@ -481,12 +480,13 @@ h2{
 
 
 
-
+//Media screen styling
 @media screen and (min-width: 480px) {
     // Home section styling
     .home {
       padding-top: 12rem;
     }
+
     //  Search section styling ‒‒‒‒‒‒‒‒‒‒‒‒====>
     .search {
       .sectionContainer {
@@ -522,17 +522,64 @@ h2{
         .plane {
           position: absolute;
           width: 95%;
-          top: -8%;
+          top: 10%;
         }
       }
     }
   
     .search {
       .sectionContainer {
-        .btns {
+        .btns{
           border-radius: 3rem;
           flex-direction: row;
         }
+
+        
+        .searchInputs{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          flex-direction: row;
+          gap: 1.5 rem;
+
+          .singleInput{
+              .iconDiv{
+                  padding: 16px 10px;
+                  border-radius: 3rem;
+                  background: var(--SecondaryColor);
+                  margin-right: 1rem;
+
+                  .icon{
+                      color: var(--blackColor);
+                      opacity: .7;
+                  }
+              }
+              .texts{
+                  h4{
+                      padding-top: 0;
+                      padding-bottom: .7rem;
+                      color: var(--blackColor);
+                      font-weight: 700;
+                  }
+                  input {
+                      width: 95%;
+                      border: none;
+                      outline: none;
+                      background: transparent;
+
+
+                      &::placeholder{
+                        font-size: 12px;
+                          opacity: .5;
+
+                        
+                      }
+                  }
+              }
+          }
+        }
+
+
       }
     }
   
@@ -577,7 +624,6 @@ h2{
         }
         .plane {
           width: 95%;
-          top: -8%;
         }
       }
     }
@@ -747,6 +793,9 @@ h2{
   
       .navbar_with_Bg {
         padding: 0 5rem;
+        background: var(--SecondaryColor);
+        // padding: .5rem 1rem;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
       }
     }
   
@@ -759,7 +808,7 @@ h2{
       .homeImages {
         .videoDiv {
           width: 90%;
-          height: 100px;
+          height: 100%;
         }
         .video {
           height: 100%;
@@ -781,4 +830,54 @@ h2{
         }
       }
     }
+
+
+    .info {
+      .infoContainer {
+          .cardsDiv {
+              gap: 1.5rem;
+              margin-top: 3rem;
+  
+              .singleCard {
+                  background: var(--whiteColor);
+                  padding: 3rem 2rem;
+                  border-radius: 10rem;
+                  gap: 1rem;
+                  text-align: center;
+                  margin: auto;
+                  height: 320px;
+                  width: 90%;
+                  max-width: 250px;
+  
+                  .iconDiv {
+                      justify-content: center;
+                      margin: auto;
+                      background: var(--PrimaryColor);
+                      width: max-content;
+                      height: 55px;
+                      padding: 1rem;
+                      border-radius: 3rem;
+  
+                      .icon {
+                          color: var(--whiteColor);
+                      }
+                  }
+  
+                  .cardTitle {
+                      color: var(--BlackColor);
+                      font-weight: 700;
+                  }
+  
+                  .colorOne {
+                      background: var(--colorOne);
+                  }
+                  
+                  .colorTwo {
+                      background: var(--colorTwo);
+                  }
+              }
+          }
+      }
+  }
+
   }

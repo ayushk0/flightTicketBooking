@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="sectionContainer container grid">
         <div className="gridOne">
           <div className="logoDiv">
-            <img src="{Logo}" className="Logo" />
+            <img src={Logo} className="Logo" />
           </div>
           <p>Your mind should be stronger than your feelings, fly</p>
           <div className="socialIcon flex">

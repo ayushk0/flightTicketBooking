@@ -17,7 +17,7 @@ const Info = () => {
                 </div>
 
 
-                <div className="cardsDiv grid">
+                <div className="cardsDiv flex">
                     <div className="singleCard grid">
                         <div className="iconDiv flex">
                             <RxCalendar className='icon'/>

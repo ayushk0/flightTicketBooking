@@ -201,7 +201,7 @@ h2 {
     transition: 0.5s ease-in-out;
   }
 }
-.navBar .navbar_with_Bg {
+.navBar .navbar_With_Bg {
   background: var(--SecondaryColor);
   padding: 0.5rem 1rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
@@ -236,13 +236,13 @@ h2 {
 .home .homeImages .plane {
   position: absolute;
   width: 100%;
-  top: -25%;
+  top: 10%;
 }
 
 .search .sectionContainer {
   width: 100%;
   padding: 1.5rem;
-  border: 2px solid var(-- greyBg);
+  border: 2px solid var(--greyBg);
   border-radius: 16px;
   row-gap: 2rem;
 }
@@ -251,8 +251,8 @@ h2 {
   padding: 0.5rem;
   border-radius: 1rem;
   flex-direction: column;
-  margin: auto;
   width: 100%;
+  margin: auto;
 }
 .search .sectionContainer .btns .singleBtn {
   padding: 0.8rem 1.5rem;
@@ -267,13 +267,14 @@ h2 {
   font-weight: 500;
   transition: 0.4s ease;
 }
-.search .sectionContainer .active {
+.search .sectionContainer .btns .active {
   background: var(--PrimaryColor);
   color: var(--SecondaryColor);
   font-weight: 500;
 }
 .search .sectionContainer .searchInputs {
   width: 100%;
+  display: flex;
   justify-content: center;
   flex-direction: column;
   gap: 1.5 rem;
@@ -302,11 +303,11 @@ h2 {
 }
 .search .sectionContainer .searchInputs .singleInput .texts input::-moz-placeholder {
   font-size: 12px;
-  opacity: 0.7;
+  opacity: 0.5;
 }
 .search .sectionContainer .searchInputs .singleInput .texts input::placeholder {
   font-size: 12px;
-  opacity: 0.7;
+  opacity: 0.5;
 }
 
 .info {
@@ -437,11 +438,48 @@ h2 {
   .home .homeImages .plane {
     position: absolute;
     width: 95%;
-    top: -8%;
+    top: 10%;
   }
   .search .sectionContainer .btns {
     border-radius: 3rem;
     flex-direction: row;
+  }
+  .search .sectionContainer .searchInputs {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1.5 rem;
+  }
+  .search .sectionContainer .searchInputs .singleInput .iconDiv {
+    padding: 16px 10px;
+    border-radius: 3rem;
+    background: var(--SecondaryColor);
+    margin-right: 1rem;
+  }
+  .search .sectionContainer .searchInputs .singleInput .iconDiv .icon {
+    color: var(--blackColor);
+    opacity: 0.7;
+  }
+  .search .sectionContainer .searchInputs .singleInput .texts h4 {
+    padding-top: 0;
+    padding-bottom: 0.7rem;
+    color: var(--blackColor);
+    font-weight: 700;
+  }
+  .search .sectionContainer .searchInputs .singleInput .texts input {
+    width: 95%;
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+  .search .sectionContainer .searchInputs .singleInput .texts input::-moz-placeholder {
+    font-size: 12px;
+    opacity: 0.5;
+  }
+  .search .sectionContainer .searchInputs .singleInput .texts input::placeholder {
+    font-size: 12px;
+    opacity: 0.5;
   }
   .info .infoContainer .titleDiv {
     flex-direction: row;
@@ -472,7 +510,6 @@ h2 {
   }
   .home .homeImages .plane {
     width: 95%;
-    top: -8%;
   }
   .search .sectionContainer .btn {
     border-radius: 3rem;
@@ -593,6 +630,8 @@ h2 {
   }
   .navBar .navbar_with_Bg {
     padding: 0 5rem;
+    background: var(--SecondaryColor);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   }
   .home .mainText {
     width: 60%;
@@ -601,7 +640,7 @@ h2 {
   }
   .home .homeImages .videoDiv {
     width: 90%;
-    height: 100px;
+    height: 100%;
   }
   .home .homeImages .video {
     height: 100%;
@@ -616,5 +655,43 @@ h2 {
   }
   .search .sectionContainer .btns {
     width: 50%;
+  }
+  .info .infoContainer .cardsDiv {
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+  .info .infoContainer .cardsDiv .singleCard {
+    background: var(--whiteColor);
+    padding: 3rem 2rem;
+    border-radius: 10rem;
+    gap: 1rem;
+    text-align: center;
+    margin: auto;
+    height: 320px;
+    width: 90%;
+    max-width: 250px;
+  }
+  .info .infoContainer .cardsDiv .singleCard .iconDiv {
+    justify-content: center;
+    margin: auto;
+    background: var(--PrimaryColor);
+    width: -moz-max-content;
+    width: max-content;
+    height: 55px;
+    padding: 1rem;
+    border-radius: 3rem;
+  }
+  .info .infoContainer .cardsDiv .singleCard .iconDiv .icon {
+    color: var(--whiteColor);
+  }
+  .info .infoContainer .cardsDiv .singleCard .cardTitle {
+    color: var(--BlackColor);
+    font-weight: 700;
+  }
+  .info .infoContainer .cardsDiv .singleCard .colorOne {
+    background: var(--colorOne);
+  }
+  .info .infoContainer .cardsDiv .singleCard .colorTwo {
+    background: var(--colorTwo);
   }
 }/*# sourceMappingURL=main.css.map */
