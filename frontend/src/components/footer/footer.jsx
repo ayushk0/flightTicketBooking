@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="sectionContainer container grid">
         <div className="gridOne">
           <div className="logoDiv">
-            <img src={Logo} className="Logo" />
+            <img src={Logo} alt="logo" className="Logo" />
           </div>
           <p>Your mind should be stronger than your feelings, fly</p>
           <div className="socialIcon flex">
@@ -28,66 +28,66 @@ const Footer = () => {
         <div className="footerLinks">
           <span className="linkTitle">Information</span>
           <li>
-            <a href="">Home</a>
+            <a href="/#">Home</a>
           </li>
           <li>
-             <a href="">Explore</a>
+             <a href="/#">Explore</a>
           </li>
           <li>
-             <a href="">Flight Status</a>
+             <a href="/#">Flight Status</a>
           </li>
           <li>
-            <a href="">Travel</a>
+            <a href="/#">Travel</a>
           </li>
           <li>
-            <a href="">Check-In</a>
+            <a href="/#">Check-In</a>
           </li>
           <li>
-            <a href="">Manage your booking</a>
+            <a href="/#">Manage your booking</a>
           </li>
         </div>
 
         <div className="footerLinks">
           <span className="linkTitle">Quick Guide</span>
           <li>
-             <a href="">FAQ</a>
+             <a href="/#">FAQ</a>
           </li>
           <li>
-            <a href="">How to</a>
+            <a href="/#">How to</a>
           </li>
           <li>
-             <a href="">Features</a>
+             <a href="/#">Features</a>
           </li>
           <li>
-             <a href="">Baggage</a>
+             <a href="/#">Baggage</a>
           </li>
           <li>
-             <a href="">Route Map</a>
+             <a href="/#">Route Map</a>
           </li>
           <li>
-            <a href="">Our Communities</a>
+            <a href="/#">Our Communities</a>
           </li>
         </div>
 
         <div className="footerLinks">
           <span className="linkTitle">Information</span>
           <li>
-             <a href="#">Chauffuer</a>
+             <a href="/#">Chauffuer</a>
           </li>
           <li>
-            <a href="#">Our partners</a>
+            <a href="/#">Our partners</a>
           </li>
           <li>
-             <a href="#">Destination</a>
+             <a href="/#">Destination</a>
           </li>
           <li>
-             <a href="#">Careers</a>
+             <a href="/#">Careers</a>
           </li>
           <li>
-            <a href="#">Transportation</a>
+            <a href="/#">Transportation</a>
           </li>
           <li>
-            <a href="#">Programme Rules</a>
+            <a href="/#">Programme Rules</a>
           </li>
         </div>
       </div>
